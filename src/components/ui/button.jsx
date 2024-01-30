@@ -1,14 +1,16 @@
-import React from 'react';
+import React from "react";
 
-const Button = () => {
+const Button = ({ className, buttonText, imageSrc }) => {
   return (
     <div>
-      <button className='flex gap-1 px-10 py-5 uppercase border rounded-3xl bg-[#F5D577]'>
-        <div>this is button</div>
+      <button
+        className={`flex gap-1 px-10 py-5 uppercase border rounded-3xl ${className}`}
+      >
+        <div>{buttonText}</div>
         <img
-          src={`${process.env.PUBLIC_URL}/assets/navbar/cartIcon.png`}
-          alt=''
-          className='size-6'
+          src={`${process.env.PUBLIC_URL}/assets/navbar/${imageSrc}`}
+          alt="img"
+          className="size-6"
         />
       </button>
     </div>
