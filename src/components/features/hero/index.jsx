@@ -34,11 +34,15 @@ const Hero = () => {
           boxData.map((item, data) => (
             <div
               key={data}
-              className='flex border-r-[1px] border-black bg-[#F5D577] px-[80px] py-[50px]'
+              className='flex border-r-[1px] border-black bg-[#F5D577] px-[50px] py-[80px]'
             >
-              <img className='size-[64px]' src={item.image} alt='img' />
-              <div className='flex flex-col gap-[20px]'>
-                <div className='font-bold'>{item.title}</div>
+              <img
+                className='size-[64px] mr-[30px]'
+                src={item.image}
+                alt='img'
+              />
+              <div className='flex flex-col'>
+                <div className='font-bold mb-[29px]'>{item.title}</div>
                 <div className=''>{item.description}</div>
               </div>
             </div>
