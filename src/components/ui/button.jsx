@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react';
 
 const Button = ({ className, buttonText, imageSrc }) => {
   return (
     <div>
       <button
-        className={`flex gap-1 px-10 py-5 uppercase border rounded-3xl ${className}`}
+        className={`flex gap-[10px] px-[40px] items-center uppercase border border-black rounded-full text-[20px] tracking-[2.4px] ${className}`}
       >
         <div>{buttonText}</div>
         <img
-          src={`${process.env.PUBLIC_URL}/assets/navbar/${imageSrc}`}
-          alt="img"
-          className="size-6"
+          src={`${process.env.PUBLIC_URL}/assets/${imageSrc}`}
+          alt='img'
+          className=''
         />
       </button>
     </div>
