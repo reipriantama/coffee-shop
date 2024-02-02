@@ -73,7 +73,7 @@ const Home = () => {
 
         <div>
           <Button
-            className='mt-[39px] flex justify-center bg-[#F5D577] w-[277px] h-[58px]'
+            className='mt-[39px] flex justify-center bg-[#F5D577] w-[374px] h-[58px]'
             buttonText='book a table'
             imageSrc='hero/iconArrowRight.png'
           />
