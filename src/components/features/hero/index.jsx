@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
+import Button from '../../ui/button';
+import Navbar from '../layout/navbar';
 
 const Hero = () => {
+  const backgroundImageUrl = `${process.env.PUBLIC_URL}/assets/hero/coffeeShopBg.png`;
+
   const [boxData] = useState([
     {
       image: `${process.env.PUBLIC_URL}/assets/hero/iconPointer.png`,
@@ -28,7 +32,39 @@ const Hero = () => {
     },
   ]);
   return (
-    <div>
+    <div
+      className='bg-bottom'
+      style={{ backgroundImage: `url(${backgroundImageUrl})` }}
+    >
+      <Navbar />
+      <div className='flex justify-center pt-[100px] pb-[291px]'>
+        <div className='flex flex-col items-center text-white w-[960px] gap-10'>
+          <div className='text-[72px] font-alice text-center'>
+            Exceptional Coffee, Memorable Moments
+          </div>
+          <div className='text-[20px] text-center w-[618px]'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+            purus sit amet luctus venenatis, lectus magna fringilla urna,
+            porttitor rhoncus dolor purus non enim{' '}
+          </div>
+          <div>
+            <Button
+              className='bg-[#F5D577] shadow-md shadow-[#F5D577] h-[63px] text-black'
+              buttonText='shop now'
+              imageSrc='hero/iconArrowRight.png'
+            />
+          </div>
+          <div className='mt-[100px] font-lato'>
+            Scroll Down
+            <div className='flex justify-center mt-[10px]'>
+              <img
+                src={`${process.env.PUBLIC_URL}/assets/hero/arrowDown.png`}
+                alt='img'
+              />
+            </div>
+          </div>
+        </div>
+      </div>
       <div className='flex '>
         {boxData &&
           boxData.map((item, data) => (
