@@ -3,10 +3,10 @@ import Button from "../../ui/button";
 
 const Navbar = () => {
   return (
-    <div className="h-[164px] px-[163px] py-[50px] text-white bg-indigo-300 border-b border-black">
-      <div className="flex items-center justify-between border border-black">
-        <div className="flex items-center">
-          <div className="flex mr-[100px] text-[32px] font-alice">
+    <div className='h-[164px] px-[163px] py-[50px] text-white bg-indigo-300 border-b border-black sticky top-0'>
+      <div className='flex items-center justify-between border border-black'>
+        <div className='flex items-center'>
+          <div className='flex mr-[100px] text-[32px] font-alice'>
             <img
               src={`${process.env.PUBLIC_URL}/assets/navbar/coffeeCup.png`}
               alt="img"
