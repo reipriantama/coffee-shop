@@ -6,7 +6,7 @@ const Contact = () => {
     <div className='bg-[#F5D577] px-[150px] py-[163px] flex'>
       <div className='border-[1px] border-[#1A1A1A]'>
         {' '}
-        <img className='w-[606px] h-[543px]' src='' alt='img' />
+        <img className='w-[606px] h-[543px]' src='123123' alt='img' />
       </div>
       <div className='w-[782px] flex flex-col ml-[153px] gap-[40px] py-[89px] text-[#1A1A1A]'>
         <div className='font-alice text-[50px]'>
