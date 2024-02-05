@@ -5,6 +5,7 @@ import Home from '../../components/features/section1';
 import About from '../../components/features/section2';
 import Menu from '../../components/features/section3';
 import Varieties from '../../components/features/section4';
+import Contact from '../../components/features/section5';
 
 const LandingPage = () => {
   return (
@@ -14,6 +15,7 @@ const LandingPage = () => {
       <About />
       <Menu />
       <Varieties />
+      <Contact />
       <Footer />
     </div>
   );
