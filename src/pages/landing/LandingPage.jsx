@@ -7,6 +7,7 @@ import Menu from '../../components/features/section3';
 import Varieties from '../../components/features/section4';
 import Contact from '../../components/features/section5';
 import Gallery from '../../components/features/section6';
+import Experience from '../../components/features/section7';
 
 const LandingPage = () => {
   return (
@@ -18,6 +19,7 @@ const LandingPage = () => {
       <Varieties />
       <Contact />
       <Gallery />
+      <Experience />
       <Footer />
     </div>
   );

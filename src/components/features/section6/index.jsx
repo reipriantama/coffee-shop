@@ -24,7 +24,7 @@ const Gallery = () => {
         </div>
         <div className=''>
           <div className='border-[1px] border-[#1A1A1A] size-[600px]'>img</div>
-          <div className='border-[1px] border-[#1A1A1A] w-[600px] h-[186px]'>
+          <div className='border-[1px] border-[#1A1A1A] w-[600px] h-[185px]'>
             bg
           </div>
         </div>
@@ -32,7 +32,7 @@ const Gallery = () => {
           <div className='border-[1px] border-[#1A1A1A] size-[206px]'>
             image
           </div>
-          <div className='border-[1px] border-[#1A1A1A] w-[206px] h-[581px] bg-[#F9E8B3]'>
+          <div className='border-[1px] border-[#1A1A1A] w-[206px] h-[579px] bg-[#F9E8B3]'>
             bg
           </div>
         </div>
