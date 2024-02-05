@@ -5,3 +5,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-pagination {
+  margin-top: 60px;
+  position: relative !important;
+}
