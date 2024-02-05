@@ -38,6 +38,18 @@ const Menu = () => {
       description: 'Espresso Milk With Flavor,and Cream',
       price: '3.10',
     },
+    {
+      imgSrc: '',
+      title: 'Iced Caramel Latte',
+      description: 'Espresso, Milk, Ice and Caramel Sauce',
+      price: '2.12',
+    },
+    {
+      imgSrc: '',
+      title: 'Espresso Machiato',
+      description: 'Rich Espresso With Milk and Foam',
+      price: '3.08',
+    },
   ];
 
   return (

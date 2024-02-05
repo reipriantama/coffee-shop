@@ -1,9 +1,10 @@
-import React from "react";
-import Footer from "../../components/features/layout/footer";
-import Hero from "../../components/features/hero";
-import Home from "../../components/features/section1";
-import About from "../../components/features/section2";
-import Menu from "../../components/features/section3";
+import React from 'react';
+import Footer from '../../components/features/layout/footer';
+import Hero from '../../components/features/hero';
+import Home from '../../components/features/section1';
+import About from '../../components/features/section2';
+import Menu from '../../components/features/section3';
+import Varieties from '../../components/features/section4';
 
 const LandingPage = () => {
   return (
@@ -12,6 +13,7 @@ const LandingPage = () => {
       <Home />
       <About />
       <Menu />
+      <Varieties />
       <Footer />
     </div>
   );
