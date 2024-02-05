@@ -44,7 +44,7 @@ const Experience = () => {
       </div>
       <div className='flex gap-[30px]'>
         <Swiper
-          slidesPerView={'auto'}
+          slidesPerView={1}
           spaceBetween={30}
           pagination={{
             clickable: true,
