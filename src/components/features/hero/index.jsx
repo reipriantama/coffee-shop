@@ -37,8 +37,8 @@ const Hero = () => {
       style={{ backgroundImage: `url(${backgroundImageUrl})` }}
     >
       <Navbar />
-      <div className='flex justify-center pt-[100px] pb-[291px]'>
-        <div className='flex flex-col items-center text-white w-[960px] gap-10'>
+      <div className='flex flex-col justify-center items-center h-[970px] pt-[100px] relative'>
+        <div className='flex flex-col items-center text-white w-[960px] gap-10 '>
           <div className='text-[72px] font-alice text-center'>
             Exceptional Coffee, Memorable Moments
           </div>
@@ -54,7 +54,7 @@ const Hero = () => {
               imageSrc='hero/iconArrowRight.png'
             />
           </div>
-          <div className='mt-[100px] font-lato'>
+          <div className='absolute text-white bottom-6 font-lato'>
             Scroll Down
             <div className='flex justify-center mt-[10px]'>
               <img

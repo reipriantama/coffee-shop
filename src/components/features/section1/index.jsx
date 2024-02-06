@@ -84,7 +84,7 @@ const Home = () => {
           <div key={index} className='w-[511px]'>
             <div className='border border-black size-[511px]'>
               <img
-                className='size-[511px]'
+                className='size-[511px] object-cover'
                 src={`${process.env.PUBLIC_URL}${data.imgSrc}`}
                 alt='img'
               />

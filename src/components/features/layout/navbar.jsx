@@ -3,7 +3,7 @@ import Button from '../../ui/button';
 
 const Navbar = () => {
   return (
-    <div className='h-[164px] px-[163px] py-[50px] text-white bg-transparent border-b border-white'>
+    <div className='h-[164px] w-full px-[163px] py-[50px] text-white bg-transparent border-b border-white fixed'>
       <div className='flex items-center justify-between'>
         <div className='flex items-center'>
           <div className='flex mr-[100px] text-[32px] font-alice'>

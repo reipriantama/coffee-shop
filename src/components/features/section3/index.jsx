@@ -62,8 +62,12 @@ const Menu = () => {
           {menuData.map((data, index) => (
             <div key={index}>
               <div className='flex'>
-                <div className='border-[25px] border-[#F3F0D9] size-[150px]'>
-                  {data.imgSrc}
+                <div className='border-[25px] border-[#F3F0D9] '>
+                  <img
+                    src={`${process.env.PUBLIC_URL}/assets/section3/caffeLatte.png`}
+                    alt='img'
+                    className='size-[150px] object-cover'
+                  />
                 </div>
                 <div className='flex justify-between w-[602px]'>
                   <div className='flex flex-col place-content-center py-[37px] gap-[6px] ml-[30px]'>
