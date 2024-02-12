@@ -4,7 +4,7 @@ const Button = ({ className, buttonText, imageSrc }) => {
   return (
     <div>
       <button
-        className={`flex gap-[10px] px-[40px] items-center uppercase border border-black rounded-full text-[20px] tracking-[2.4px] ${className}`}
+        className={`flex gap-[10px] px-[40px] items-center uppercase border border-black rounded-full sm:text-sm md:text-base 2xl:text-[20px] tracking-[2.4px] ${className}`}
       >
         <div>{buttonText}</div>
         <img

@@ -38,13 +38,13 @@ const Experience = () => {
   ];
 
   return (
-    <div className='flex flex-col gap-[60px] px-[163px] pb-[150px]'>
+    <div className='flex flex-col gap-[60px] pl-[163px] pb-[150px]'>
       <div className='font-alice text-[50px]'>
         The Coffee Experience <br /> Customer
       </div>
       <div className='flex gap-[30px]'>
         <Swiper
-          slidesPerView={1}
+          slidesPerView={2}
           spaceBetween={30}
           pagination={{
             clickable: true,
@@ -62,7 +62,7 @@ const Experience = () => {
                     className='size-[413px] object-cover'
                   />
                 </div>
-                <div className='flex flex-col p-[30px] bg-[#F4F0E4] text-[#1A1A1A] w-[511px] h-[413px] border-[1px] border-[#1A1A1A]'>
+                <div className='flex flex-col p-[30px]  bg-[#F4F0E4] text-[#1A1A1A] w-[511px] h-[413px] border-[1px] border-[#1A1A1A]'>
                   <div className='flex flex-col gap-[20px]'>
                     <div className='font-alice text-[30px]'>{item.title}</div>
                     <div className='text-[20px]'>{item.description}</div>

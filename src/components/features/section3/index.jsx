@@ -53,7 +53,9 @@ const Menu = () => {
   ];
 
   return (
-    <div className='px-[163px] pt-[150px] pb-[110px] flex justify-center '>
+    <div className='px-[163px] pt-[150px] pb-[110px] flex justify-center
+      bg-red-200 sm:bg-blue-100 md:bg-yellow-200 lg:bg-purple-100 xl:bg-green-200 2xl:bg-lime-400 3xl:bg-indigo-200  
+    '>
       <div>
         <div className='text-[50px] font-alice text-center mb-[60px]'>
           Explore Our Menu: Coffee Delights <br /> for Every Palate
@@ -62,11 +64,11 @@ const Menu = () => {
           {menuData.map((data, index) => (
             <div key={index}>
               <div className='flex'>
-                <div className='border-[25px] border-[#F3F0D9] '>
+                <div className='border-[25px] border-[#F3F0D9] flex-none '>
                   <img
                     src={`${process.env.PUBLIC_URL}/assets/section3/caffeLatte.png`}
                     alt='img'
-                    className='size-[150px] object-cover'
+                    className='size-24 xl:size-32 2xl:size-[150px] object-cover'
                   />
                 </div>
                 <div className='flex justify-between w-[602px]'>

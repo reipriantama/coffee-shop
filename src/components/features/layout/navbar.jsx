@@ -3,14 +3,15 @@ import Button from '../../ui/button';
 
 const Navbar = () => {
   return (
-    <div className='h-[164px] w-full px-[163px] py-[50px] text-white bg-transparent border-b border-white fixed'>
+    <div className='h-[164px] w-full sm:px-4 2xl:px-[163px] py-[50px] text-white bg-transparent border-b border-white fixed z-10'>
       <div className='flex items-center justify-between'>
         <div className='flex items-center'>
           <div className='flex mr-[100px] text-[32px] font-alice'>
             <img
               src={`${process.env.PUBLIC_URL}/assets/navbar/coffeeCup.png`}
               alt='img'
-            />{' '}
+              className='size'
+            />
             Gedion Coffee
           </div>
           <div className='flex gap-[50px] uppercase'>

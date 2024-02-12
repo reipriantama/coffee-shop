@@ -4,44 +4,45 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
+import './index.css';
 
 const Varieties = () => {
   const varietiesData = [
     {
-      image: '',
+      image: 'assets/section4/coffeeArabica.png',
       title: 'Arabica',
       rating: 5,
       description:
         'Considered the most popular and widely consumed coffee variety.',
     },
     {
-      image: '',
+      image: 'assets/section4/coffeeRobusta.png',
       title: 'Robusta',
       rating: 5,
       description: 'Known for its high caffeine content and strong flavor.',
     },
     {
-      image: '',
+      image: 'assets/section4/coffeeColombia.png',
       title: 'Colombian',
       rating: 1,
       description:
         'Grown in the mountainous regions of Colombia, this coffee is known for...',
     },
     {
-      image: '',
+      image: 'assets/section4/coffeeEthiopian.png',
       title: 'Ethiopian',
       rating: 4,
       description:
         'Originating from Ethiopia, this coffee has a diverse range of flavors...',
     },
     {
-      image: '',
+      image: 'assets/section4/coffeeBurbon.png',
       title: 'Bourbon',
       rating: 3,
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     },
     {
-      image: '',
+      image: 'assets/section4/coffeeCatimor.png',
       title: 'Catimor',
       rating: 2,
       description:
@@ -69,7 +70,11 @@ const Varieties = () => {
               <div className='flex gap-[30px]'>
                 <div>
                   <div className='border-[25px] border-[#F3F0D9] size-[375px]'>
-                    {item.image}
+                    <img
+                      src={`${process.env.PUBLIC_URL}${item.image}`}
+                      alt='img'
+                      className='size-[325px] object-cover'
+                    />
                   </div>
                   <div className='flex flex-col p-[20px] gap-5 w-[375px]'>
                     <div className='font-alice text-[30px] text-[#1A1A1A]'>

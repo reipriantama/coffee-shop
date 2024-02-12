@@ -39,17 +39,17 @@ const Hero = () => {
       <Navbar />
       <div className='flex flex-col justify-center items-center h-[970px] pt-[100px] relative'>
         <div className='flex flex-col items-center text-white w-[960px] gap-10 '>
-          <div className='text-[72px] font-alice text-center'>
+          <div className='sm:text-[30px] lg:text-[72px] font-alice text-center'>
             Exceptional Coffee, Memorable Moments
           </div>
-          <div className='text-[20px] text-center w-[618px]'>
+          <div className='sm:text-[15px] lg:text-[20px] text-center w-[618px]'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
             purus sit amet luctus venenatis, lectus magna fringilla urna,
             porttitor rhoncus dolor purus non enim{' '}
           </div>
           <div>
             <Button
-              className='bg-[#F5D577] shadow-md shadow-[#F5D577] h-[63px] text-black'
+              className='bg-[#F5D577] shadow-md shadow-[#F5D577] sm:h-[40px] 2xl:h-[63px] text-black'
               buttonText='shop now'
               imageSrc='hero/iconArrowRight.png'
             />
@@ -65,12 +65,12 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className='flex '>
+      <div className='grid-cols-2 xl:flex sm:flex-none lg:grid'>
         {boxData &&
           boxData.map((item, data) => (
             <div
               key={data}
-              className='flex border-r-[1px] border-black bg-[#F5D577] px-[50px] py-[80px]'
+              className='flex border-r-[1px] border-black bg-[#F5D577] sm:p-7 xl:px-[50px] xl:py-[80px]'
             >
               <img
                 className='size-[64px] mr-[30px]'

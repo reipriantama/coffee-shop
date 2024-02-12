@@ -41,11 +41,11 @@ const Home = () => {
     },
   ];
   return (
-    <div className='px-[163px] py-[150px]'>
-      <div className='flex justify-center font-alice text-[50px] text-center mb-[50px]'>
-        Discover the Perfect Brew at <br /> Gedion Coffee
+    <div className='xl:px-[163px] py-[150px] sm:px-4 flex flex-col justify-center'>
+      <div className='2xl:w-[674px] 2xl:ml-[460px] font-alice sm:text-[40px] md:text-[50px] text-center mb-[50px]'>
+        Discover the Perfect Brew at Gedion Coffee
       </div>
-      <div className='grid grid-cols-4 gap-[30px]'>
+      <div className='xl:grid grid-cols-4 gap-[30px]'>
         {sectionData.map((section, index) => (
           <div key={index}>
             <div className='text-[20px] mb-[10px]'>{section.title}</div>
@@ -57,7 +57,7 @@ const Home = () => {
                 />
               </div>
               <select
-                className='bg-transparent border-none px-[30px] py-[17px] font-merriweather w-[280px] text-[14px]'
+                className='bg-transparent border-none px-[30px] py-[17px] font-merriweather sm:w-full w-[280px] text-[14px]'
                 name='persons'
                 id='persons'
               >
@@ -73,15 +73,15 @@ const Home = () => {
 
         <div>
           <Button
-            className='mt-[39px] flex justify-center bg-[#F5D577] w-[374px] h-[58px]'
+            className='mt-[39px] flex justify-center bg-[#F5D577] sm:w-full xl:w-[374px] h-[58px]'
             buttonText='book a table'
             imageSrc='hero/iconArrowRight.png'
           />
         </div>
       </div>
-      <div className='flex mt-[50px] gap-[30px]'>
+      <div className='sm:px-10 xl:flex mt-[50px] gap-[30px]'>
         {cardData.map((data, index) => (
-          <div key={index} className='w-[511px]'>
+          <div key={index} className='w-[511px] sm:mb-10'>
             <div className='border border-black size-[511px]'>
               <img
                 className='size-[511px] object-cover'

@@ -30,20 +30,20 @@ const About = () => {
   ];
 
   return (
-    <div className='text-white bg-black px-[163px] py-[150px]'>
-      <div className='flex '>
+    <div className='text-white bg-black px-6 md:px-8 2xl:px-[163px] py-[150px]'>
+      <div className='xl:flex '>
         <div className='flex flex-col py-[89px] w-[782px] mr-[153px] gap-[40px]'>
-          <div className='text-[50px] font-alice'>
-            Quality Coffee <br /> Cultivated by Good
+          <div className='sm:ml-12 sm:text-center sm:w-[520px] xl:w-[446px] text-[50px] font-alice'>
+            Quality Coffee Cultivated by Good
           </div>
-          <div className='text-[20px]'>
+          <div className='text-[20px] sm:w-[586px] sm:text-center'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
             purus sit amet luctus venenatis, lectus magna fringilla urna,
             porttitor rhoncus dolor purus non enim dolor sit amet, consectetur
             adipiscing elit aliquam purus sit amet luctus venenatis
           </div>
           <Button
-            className='bg-[#F5D577] shadow-md shadow-[#F5D577] h-[63px] text-black'
+            className='bg-[#F5D577] shadow-md shadow-[#F5D577] sm:ml-[200px] h-[63px] text-black'
             buttonText='shop now'
             imageSrc='hero/iconArrowRight.png'
           />
@@ -53,15 +53,18 @@ const About = () => {
           <img
             src={`${process.env.PUBLIC_URL}/assets/section2/qualityCoffee.png`}
             alt='img'
-            className='w-[606.5px] h-[543.5px] object-cover'
+            className='sm:w-[590px] w-[606.5px] h-[543.5px] object-cover'
           />
         </div>
       </div>
-      <div className='flex gap-[30px] mt-[80px]'>
+      <div className='xl:flex gap-[30px] mt-[80px]'>
         {cardData.map((card, index) => (
           <div key={index} className='flex flex-col w-[376px] text-[20px]'>
             <div className='mb-[30px]'>
-              <img src={`${process.env.PUBLIC_URL}${card.iconSrc}`} alt='' />
+              <img
+                src={`${process.env.PUBLIC_URL}${card.iconSrc}`}
+                alt='icon'
+              />
             </div>
             <div className='mb-[15px] font-bold'>{card.title}</div>
             <div className='pr-5 text-[#BBBBBB]'>{card.description}</div>
