@@ -3,12 +3,12 @@ import Button from '../../ui/button';
 
 const Gallery = () => {
   return (
-    <div className='flex flex-col gap-[60px] px-[163px] py-[150px]'>
+    <div className='flex flex-col gap-[60px] sm:px-4 lg:px-[150px] 2xl:px-[163px] py-[150px]'>
       <div className='flex justify-center font-alice text-[50px] text-[#1A1A1A]'>
         Coffee Shop Gallery
       </div>
-      <div className='w-[1595px] h-[788px] flex'>
-        <div className='w-[192px] h-[785px] bg-[#F9E8B3] border-[1px] border-[#1A1A1A]'></div>
+      <div className='md:ml- xl:w-[1595px] xl:h-[788px] xl:flex'>
+        <div className='sm:hidden xl:block w-[192px] h-[785px] bg-[#F9E8B3] border-[1px] border-[#1A1A1A]'></div>
         <div>
           <div className='flex'>
             <div className='size-[386px] border-[1px] border-[#1A1A1A]'>
@@ -38,7 +38,7 @@ const Gallery = () => {
           </div>
           <div className='border-[1px] border-[#1A1A1A] w-[600px] h-[185px]'></div>
         </div>
-        <div className=''>
+        <div className='sm:hidden xl:block'>
           <div className=' size-[206px]'>
             <img
               src={`${process.env.PUBLIC_URL}/assets/section6/coffeeGallery4.png`}
@@ -46,7 +46,7 @@ const Gallery = () => {
               className='size-[206px] object-cover border-[1px] border-[#1A1A1A] '
             />
           </div>
-          <div className='border-[1px] border-[#1A1A1A] w-[206px] h-[579px] bg-[#F9E8B3]'></div>
+          <div className='border-[1px] border-[#1A1A1A] sm:w-[394px] xl:w-[206px] xl:h-[579px] bg-[#F9E8B3]'></div>
         </div>
       </div>
       <div className='flex justify-center'>

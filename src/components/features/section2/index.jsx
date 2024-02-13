@@ -30,9 +30,9 @@ const About = () => {
   ];
 
   return (
-    <div className='text-white bg-black px-6 md:px-8 2xl:px-[163px] py-[150px]'>
-      <div className='xl:flex '>
-        <div className='flex flex-col py-[89px] w-[782px] mr-[153px] gap-[40px]'>
+    <div className='text-white bg-black sm:px-6 md:px-8 2xl:px-[163px] py-[150px]'>
+      <div className='xl:flex md:ml-[150px]'>
+        <div className='flex flex-col  py-[89px] w-[782px] mr-[153px] gap-[40px]'>
           <div className='sm:ml-12 sm:text-center sm:w-[520px] xl:w-[446px] text-[50px] font-alice'>
             Quality Coffee Cultivated by Good
           </div>
@@ -57,7 +57,7 @@ const About = () => {
           />
         </div>
       </div>
-      <div className='xl:flex gap-[30px] mt-[80px]'>
+      <div className='md:grid md:grid-cols-2 xl:flex gap-[30px] mt-[80px]'>
         {cardData.map((card, index) => (
           <div key={index} className='flex flex-col w-[376px] text-[20px]'>
             <div className='mb-[30px]'>

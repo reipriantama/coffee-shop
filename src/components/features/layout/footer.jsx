@@ -28,9 +28,9 @@ const Footer = () => {
 
   return (
     <div className='text-white bg-black text-[20px] mt-[-1px]'>
-      <div className='flex px-[163px] pt-[50px] mb-[100px] '>
-        <div className='flex items-start '>
-          <div className='flex flex-col gap-[30px] w-[332px] mr-[77px]'>
+      <div className='flex sm:px-10 xl:px-[163px] pt-[50px] mb-[100px] '>
+        <div className='xl:items-start xl:flex'>
+          <div className='flex flex-col gap-[30px] xl:w-[332px] mr-[77px]'>
             <div className='flex text-[32px] font-alice'>
               {' '}
               <img
@@ -59,7 +59,7 @@ const Footer = () => {
               />
             </div>
           </div>
-          <div className='flex gap-[177px]'>
+          <div className='sm:mt-6 xl:mt-0 xl:flex xl:flex-row sm:flex sm:flex-col sm:gap-5 xl:gap-[177px]'>
             <div>
               <div className='text-[30px] font-alice'>Explore</div>
               <div className='flex gap-[20px] mt-[30px]'>

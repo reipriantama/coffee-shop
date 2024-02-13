@@ -41,7 +41,7 @@ const Home = () => {
     },
   ];
   return (
-    <div className='xl:px-[163px] py-[150px] sm:px-4 flex flex-col justify-center'>
+    <div className='2xl:px-[163px] py-[150px] sm:px-4 flex flex-col justify-center'>
       <div className='2xl:w-[674px] 2xl:ml-[460px] font-alice sm:text-[40px] md:text-[50px] text-center mb-[50px]'>
         Discover the Perfect Brew at Gedion Coffee
       </div>
@@ -79,12 +79,12 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className='sm:px-10 xl:flex mt-[50px] gap-[30px]'>
+      <div className='sm:px-10 sm:flex sm:flex-col items-center lg:flex xl:flex-row mt-[50px] gap-[30px]'>
         {cardData.map((data, index) => (
           <div key={index} className='w-[511px] sm:mb-10'>
-            <div className='border border-black size-[511px]'>
+            <div className='border border-black xl:size-[300px] 2xl:size-[511px]'>
               <img
-                className='size-[511px] object-cover'
+                className='xl:size-[300px] xl:object-cover xl:border 2xl:size-[511px] 2xl:object-cover'
                 src={`${process.env.PUBLIC_URL}${data.imgSrc}`}
                 alt='img'
               />

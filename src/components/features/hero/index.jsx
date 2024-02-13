@@ -39,7 +39,7 @@ const Hero = () => {
       <Navbar />
       <div className='flex flex-col justify-center items-center h-[970px] pt-[100px] relative'>
         <div className='flex flex-col items-center text-white w-[960px] gap-10 '>
-          <div className='sm:text-[30px] lg:text-[72px] font-alice text-center'>
+          <div className='sm:text-[40px] sm:w-[400px] xl:w-full xl:text-[72px] font-alice text-center'>
             Exceptional Coffee, Memorable Moments
           </div>
           <div className='sm:text-[15px] lg:text-[20px] text-center w-[618px]'>
@@ -65,7 +65,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className='grid-cols-2 xl:flex sm:flex-none lg:grid'>
+      <div className='grid-cols-2 xl:flex sm:flex-none md:grid'>
         {boxData &&
           boxData.map((item, data) => (
             <div

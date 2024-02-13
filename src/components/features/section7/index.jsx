@@ -32,19 +32,24 @@ const Experience = () => {
       image: '/assets/section7/davidGilmour.png',
       title: 'dolor sit amet consectetur',
       description: `"Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatum, ullam placeat molestiae labore, assumenda et vel voluptate inventore distinctio "`,
-      name: 'Caroline',
+      name: 'David',
       rating: 3,
     },
   ];
 
   return (
-    <div className='flex flex-col gap-[60px] pl-[163px] pb-[150px]'>
-      <div className='font-alice text-[50px]'>
-        The Coffee Experience <br /> Customer
+    <div className='flex flex-col gap-[60px] sm:p-4 xl:pl-[163px] pb-[150px]'>
+      <div className='font-alice text-[50px] xl:w-[689px]'>
+        The Coffee Experience Customer
       </div>
       <div className='flex gap-[30px]'>
         <Swiper
           slidesPerView={2}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+          }}
           spaceBetween={30}
           pagination={{
             clickable: true,
@@ -55,14 +60,14 @@ const Experience = () => {
           {reviewData.map((item, index) => (
             <SwiperSlide key={index}>
               <div className='flex '>
-                <div className='size-[413px] border-[1px] border-[#1A1A1A]'>
+                <div className='xl:size-[413px] border-[1px] border-[#1A1A1A]'>
                   <img
                     src={`${process.env.PUBLIC_URL}${item.image}`}
                     alt='img'
-                    className='size-[413px] object-cover'
+                    className='sm:size-[382px] xl:size-[413px] object-cover'
                   />
                 </div>
-                <div className='flex flex-col p-[30px]  bg-[#F4F0E4] text-[#1A1A1A] w-[511px] h-[413px] border-[1px] border-[#1A1A1A]'>
+                <div className='flex flex-col sm:p-1 xl:p-[30px]  bg-[#F4F0E4] text-[#1A1A1A] w-[511px] xl:h-[413px] border-[1px] border-[#1A1A1A]'>
                   <div className='flex flex-col gap-[20px]'>
                     <div className='font-alice text-[30px]'>{item.title}</div>
                     <div className='text-[20px]'>{item.description}</div>

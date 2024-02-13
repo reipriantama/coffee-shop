@@ -51,13 +51,24 @@ const Varieties = () => {
   ];
   return (
     <div>
-      <div className='px-[163px] mb-[88.5px]'>
-        <div className='flex justify-center font-alice text-[50px] mb-[60px] text-center'>
-          Coffee Varieties: From Classics <br /> to Exotics
+      <div className='xl:px-[163px] mb-[88.5px]'>
+        <div className='xl:w-[731px] xl:ml-[431px] flex justify-center font-alice text-[50px] mb-[60px] text-center'>
+          Coffee Varieties: From Classics to Exotics
         </div>
 
         <Swiper
           slidesPerView={4}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            1024: {
+              slidesPerView: 2,
+            },
+            1536: {
+              slidesPerView: 4,
+            }
+          }}
           spaceBetween={30}
           pagination={{
             clickable: true,
@@ -67,7 +78,7 @@ const Varieties = () => {
         >
           {varietiesData.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className='flex gap-[30px]'>
+              <div className='sm:flex sm:justify-center xl:flex gap-[30px]'>
                 <div>
                   <div className='border-[25px] border-[#F3F0D9] size-[375px]'>
                     <img

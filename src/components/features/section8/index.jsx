@@ -29,11 +29,11 @@ const News = () => {
   ];
 
   return (
-    <div className='text-white bg-black py-[150px] px-[163px] gap-[30px] flex flex-col'>
+    <div className='text-white bg-black py-[150px] xl:px-[163px] gap-[30px] flex flex-col'>
       <div className='flex justify-center tracking-[1px] font-alice text-[50px]'>
         Read Our Latest News
       </div>
-      <div className='flex gap-[30px]'>
+      <div className='sm:flex sm:flex-col sm:items-center xl:flex xl:flex-row gap-[30px]'>
         {newsData.map((item, index) => (
           <div className='w-[511px]' key={index}>
             <div className='border-[1px] border-white w-[511px] h-[334px]'>

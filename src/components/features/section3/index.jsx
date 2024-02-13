@@ -16,7 +16,7 @@ const Menu = () => {
     },
     {
       imgSrc: '',
-      title: 'White Chocolate Mocha',
+      title: 'White Chocolate',
       description: 'Espresso, White Chocolate, Milk, Ice and Cream',
       price: '2.30',
     },
@@ -53,34 +53,32 @@ const Menu = () => {
   ];
 
   return (
-    <div className='px-[163px] pt-[150px] pb-[110px] flex justify-center
-      bg-red-200 sm:bg-blue-100 md:bg-yellow-200 lg:bg-purple-100 xl:bg-green-200 2xl:bg-lime-400 3xl:bg-indigo-200  
-    '>
+    <div className='px-[163px] pt-[150px] pb-[110px] flex justify-center'>
       <div>
-        <div className='text-[50px] font-alice text-center mb-[60px]'>
-          Explore Our Menu: Coffee Delights <br /> for Every Palate
+        <div className='sm:text-[40px] sm:w-[570px] text-[50px] font-alice text-center mb-[60px] 2xl:w-[832px] 2xl:ml-[381px]'>
+          Explore Our Menu: Coffee Delights for Every Palate
         </div>
-        <div className='grid grid-cols-2 gap-[60px]'>
+        <div className='sm:flex sm:flex-col  2xl:grid grid-cols-2 gap-[60px]'>
           {menuData.map((data, index) => (
             <div key={index}>
-              <div className='flex'>
-                <div className='border-[25px] border-[#F3F0D9] flex-none '>
+              <div className='flex '>
+                <div className='sm:h-[145px] sm:border-[25px] xl:h-[200px] xl:border-[25px] border-[#F3F0D9] flex-none '>
                   <img
                     src={`${process.env.PUBLIC_URL}/assets/section3/caffeLatte.png`}
                     alt='img'
                     className='size-24 xl:size-32 2xl:size-[150px] object-cover'
                   />
                 </div>
-                <div className='flex justify-between w-[602px]'>
-                  <div className='flex flex-col place-content-center py-[37px] gap-[6px] ml-[30px]'>
+                <div className='sm:flex xl:flex xl:justify-between w-[602px]'>
+                  <div className='flex flex-col place-content-center xl:py-[37px] gap-[6px] ml-[30px]'>
                     <div className='font-alice text-[30px] text-[#1A1A1A]'>
                       {data.title}
                     </div>
-                    <div className='text-[20px] text-[#444444]'>
+                    <div className='sm:w-[300px] sm:pr-5 text-[20px] text-[#444444]'>
                       {data.description}
                     </div>
                   </div>
-                  <button className='mt-[38px] ml-[103px] border border-black font-alice text-[30px] rounded-full w-[126px] h-[74px]'>
+                  <button className=' mt-[38px] xl:ml-[103px] border border-black font-alice text-[30px] rounded-full w-[126px] h-[74px]'>
                     {'$'}
                     {data.price}
                   </button>
